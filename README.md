@@ -77,12 +77,13 @@ Out[4]: 'yay'
 ```
 
 
-# コード差分はPRに保存
+# Code diffs are on merged PR
 
-[Custom user by YumaInaura · Pull Request #1 · YumaInaura/django-custom-user-demo](https://github.com/YumaInaura/django-custom-user-demo/pull/1)
+- [Custom user by YumaInaura · Pull Request #1 · YumaInaura/django-custom-user-demo](https://github.com/YumaInaura/django-custom-user-demo/pull/1)
+- [Update custom user add "middle_name" field by YumaInaura · Pull Request #2 · YumaInaura/django-custom-user-demo](https://github.com/YumaInaura/django-custom-user-demo/pull/2)
 
 
- # 参考
+# 参考
  
 
 >プロジェクトの開始時にカスタムのユーザーモデルを使用する¶
