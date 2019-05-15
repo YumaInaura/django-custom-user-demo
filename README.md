@@ -2,18 +2,60 @@
 
 django で AbstractUser でカスタムユーザーを作ってマイグレーションするまでの最終手順のデモ
 
-# Commands
+# Comands
+
 
 ```
 django-admin startproject some
 cd some
 
 ./manage.py startapp users
+```
 
-vim users/models.py
-vim some/settings.py
-vim users/admin.py
+# users/models.py
 
+
+```py
+from django.db import models
+
+from django.contrib.auth.models import AbstractUser
+
+class User(AbstractUser):
+```
+
+# some/settings.py
+
+```diff
++ AUTH_USER_MODEL = 'user.User'
+```
+
+```diff
+INSTALLED_APPS = [
++    'users.apps.UsersConfig',
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+]
+
+```
+
+
+# users/admin.py
+
+```py
+from django.contrib import admin
+from django.contrib.auth.admin import UserAdmin
+from .models import User
+
+admin.site.register(User, UserAdmin)
+```
+
+# Comands
+
+```
 ./manage.py makemigrations
 ./manage.py migrate
 ```
