@@ -3,5 +3,5 @@ from django.db import models
 from django.contrib.auth.models import AbstractUser
 
 class User(AbstractUser):
-  pass
+  middle_name = models.CharField(max_length=255, null=True, blank=True)
 
