@@ -95,7 +95,7 @@ admin.site.register(User, UserAdmin)
 [Django ユーザー カスタマイズ方法 - Qiita](https://qiita.com/okoppe8/items/10ae61808dc3056f9c8e)
 
 
-# 参考記事
+# その他の参考記事
 
 
 [DjangoのUserモデルを継承してカスタマイズ | Hornet|静岡拠点のWeb、ホームページ制作](https://hombre-nuevo.com/python/python0048/#h2_1)
