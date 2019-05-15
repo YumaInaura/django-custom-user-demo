@@ -1,6 +1,6 @@
 # django-custom-user-demo
 
-django で AbstractUser でカスタムユーザーを作ってマイグレーションするまでの最終手順のデモ
+django で AbstractUser でカスタムユーザーを作ってマイグレーションするまでの最小手順のデモ
 
 # Comands
 
