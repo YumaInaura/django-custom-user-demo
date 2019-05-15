@@ -17,3 +17,7 @@ vim users/admin.py
 ./manage.py makemigrations
 ./manage.py migrate
 ```
+
+# コード差分はPRに保存
+
+[Custom user by YumaInaura · Pull Request #1 · YumaInaura/django-custom-user-demo](https://github.com/YumaInaura/django-custom-user-demo/pull/1)
