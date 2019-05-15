@@ -21,6 +21,7 @@ from django.db import models
 from django.contrib.auth.models import AbstractUser
 
 class User(AbstractUser):
+  middle_name = models.CharField(max_length=255, null=True, blank=True)
 ```
 
 # some/settings.py
@@ -59,6 +60,22 @@ admin.site.register(User, UserAdmin)
 ./manage.py makemigrations
 ./manage.py migrate
 ```
+
+# Create user and show ext field
+
+```
+./manage.py shell
+```
+
+```
+In [2]: from users.models import User
+
+In [3]: u = User.objects.create(middle_name='yay')
+
+In [4]: u.middle_name
+Out[4]: 'yay'
+```
+
 
 # コード差分はPRに保存
 
